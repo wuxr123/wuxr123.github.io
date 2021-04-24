@@ -128,7 +128,21 @@ body {
         margin: 0; }
       .container .main .info-unit ul li .info-content .fa {
         font-size: 1em; }
-
+.hjdj{
+	width:195px;
+	text-align:left;
+	display:inline-block;
+}
+.hjsj{
+	width:65px;
+	text-align:left;
+	display:inline-block;
+}
+.jxmc{
+	width:425px;
+	text-align:left;
+	display:inline-block;
+}
 /* -------------------------------------------------
  * 文档底部
  * ------------------------------------------------- */
