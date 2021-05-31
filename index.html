@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>吴潇然-个人简历</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"  type="text/css" href="assets/css/typo.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/sweet-alert.css">
+	<script src="assets/js/sweet-alert.min.js"></script>
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+	<script>
+		window.onresize = function(){
+		screenwidth = document.documentElement.clientWidth;
+		mywidth = 1091;
+		if(screenwidth>mywidth){
+		t = (1-mywidth/screenwidth)*50;
+    	document.getElementById("body").style.padding="2rem "+t.toString()+"%";}
+}
+	</script>
+
+</head>
+
+<body id="body">
+
+    <header class="header"></header>
+
+    <article class="container">
+      <section class="side" id="side">
+            <style>
+                @media (min-width: 414px) {
+                    .switch {
+                        position: relative;
+                        display: inline-block !important;
+                        width: 60px;
+                        height: 34px;
+                    }
+
+                    .switch input {
+                        display: none;
+                    }
+
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #ccc;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+
+                    .slider:before {
+                        position: absolute;
+                        content: "";
+                        height: 26px;
+                        width: 26px;
+                        left: 4px;
+                        bottom: 4px;
+                        background-color: white;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+
+                    input:checked+.slider {
+                        background-color: #1abc9c;
+                    }
+
+                    input:focus+.slider {
+                        box-shadow: 0 0 1px #1abc9c;
+                    }
+
+                    input:checked+.slider:before {
+                        -webkit-transform: translateX(26px);
+                        -ms-transform: translateX(26px);
+                        transform: translateX(26px);
+                    }
+
+                    .slider.round {
+                        border-radius: 34px;
+                    }
+
+                    .slider.round:before {
+                        border-radius: 50%;
+                    }
+                }
+            </style>
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <!-- <div class="loading">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> -->
+                    <!-- 头像照片 -->
+                  <img class="avatar" alt="error" src="assets/images/touxiang.png">
+                </section>
+
+                <h1 class="name"><strong>吴潇然</strong></h1>
+                <h4 class="info-job"><strong>Wu Xiaoran</strong> </h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>男 / 1999年 / 汉族</span>
+                    </li>
+                    <li>
+                        <label>政治面貌</label>
+                        <span>中共预备党员</span>
+                    </li>
+                    <li>
+                        <label>就读院校</label>
+                        <span>东北师范大学</span>
+                    </li>
+                    <li>
+                        <label>专业名称</label>
+                        <span>地理信息科学</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+        <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <label><i class="fa fa-envelope"></i></label>
+                        <a  href="mailto:wuxr211@nenu.edu.cn" target="_blank">wuxr211@nenu.edu.cn</a>
+                    </li>
+					<li>
+						<label></label>
+                        <a  href="mailto:wu_xiaoran@outlook.com" target="_blank">wu_xiaoran@outlook.com</a>
+					</li>
+                    <li>
+                        <label><i class="fa fa-weixin"></i></label>
+						<a  href="#" id="vx">15258545595</a>
+                        
+                    </li>
+                </ul>
+            </section>
+            <!-- PDF版本 -->
+            <section class="profile info-unit">
+				<h2>
+                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="assets/file/吴潇然-个人简历.pdf" target="_blank">简历文档下载</a></h2>
+            </section>
+ 
+
+        </section>
+        <section class="main">
+
+            <!-- 专业能力 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>学习情况</h2>
+                <hr />
+					<span style="width:330px;text-align:left;display:inline-block;"><b>综合GPA：</b><span style="font-weight: 540;">4.17（专业排名1/25）</span></span>
+						<span style="width:330px;text-align:left;display:inline-block;"><b>专业GPA：</b><span style="font-weight: 540">4.12（专业排名1/25）</span></span>
+						<span style="width:330px;text-align:left;display:inline-block;"><b>排名百分比：</b><span style="font-weight: 540">专业前4%，年级前2%</span></span>
+						<span style="width:330px;text-align:left;display:inline-block;"><b>英语水平：</b><span style="font-weight: 540">CET-6（460）</span></span>
+					<!--
+						<span style="width:330px;text-align:left;display:inline-block;"><b>计算机水平：</b><span style="font-weight: 540">二级（C语言）</span></span>
+					-->
+			
+				
+				<p style="margin-top: 10px;margin-bottom: 5px"><b>主修课程（</b><a href="assets/file/专业课成绩单.pdf" target="_blank">查看专业课成绩单</a><b>）:</b></p>
+				<p><strong>GIS/RS系列：</strong>GIS软件应用、GIS空间分析、GIS组件应用设计、计量地理学、遥感地学分析、数字地形模型、遥感数字图像处理、数据结构、空间数据库、网络GIS、C#程序设计语言、地理信息科学前沿讲座等；</p>
+				<p><strong>自然系列：</strong>地质与地貌学、气候与水文学、生物地理学、土壤地理学、自然地理过程、全球环境变化等；</p>
+				<p><strong>人文系列：</strong>人文地理学、城市地理学、经济地理学、城市GIS、城市与区域研究方法等。</p>
+					
+            </section>
+           <!-- 个人荣誉 -->
+
+            <section class="project info-unit" >
+                <h2  style="margin-top: 25px">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>主要荣誉</h2>
+                <hr />
+				<p><span class="jxmc"><b>奖项名称（</b><a href="assets/file/证书.pdf" target="_blank">查看全部证书</a><b>）</b></span>
+				<span class="hjdj"><b>获奖等级</b></span>
+				<span class="hjsj"><b>获奖时间</b></span></p>
+				<p><span class="jxmc">第九届全国大学生GIS应用技能大赛</span>
+				<span class="hjdj">国家级 特等奖</span>
+				<span class="hjsj">2020.11</span></p>
+				<p><span class="jxmc">2020易智瑞杯中国大学生GIS软件开发竞赛</span>
+				<span class="hjdj">国家级 三等奖</span>
+				<span class="hjsj">2020.11</span></p>
+				<p><span class="jxmc">国家奖学金</span>
+				<span class="hjdj">国家级</span>
+				<span class="hjsj">2020.12</span></p>
+				<p><span class="jxmc">校长奖学金（前5%）</span>
+				<span class="hjdj">校级</span>
+				<span class="hjsj">2019.12</span></p>
+				<p><span class="jxmc">优秀学生干部</span>
+				<span class="hjdj">校级</span>
+				<span class="hjsj">2019.12</span></p>
+				<p><span class="jxmc">五四优秀团员</span>
+				<span class="hjdj">校级</span>
+				<span class="hjsj">2020.6</span></p>
+				<p><span class="jxmc">优秀学生干部</span>
+				<span class="hjdj">校级</span>
+				<span class="hjsj">2020.12</span></p>
+				<p><span class="jxmc">第八届“家曦杯”大学生课外学术科技作品竞赛</span>
+				<span class="hjdj">校级 优秀奖</span>
+				<span class="hjsj">2021.4</span></p>
+				<p><span class="jxmc">东北师范大学地理科学学院青年学子学术论坛</span>
+				<span class="hjdj">院级 一等奖</span>
+				<span class="hjsj">2021.5</span></p>		
+            </section> 
+			
+			 <!-- 科研经历 -->
+
+            <section class="project info-unit">
+                <h2 style="margin-top: 25px">
+                    <i class="fa fa-university" aria-hidden="true"></i>科研经历</h2>
+                <hr />
+				<ul>
+                    <li>
+                        <h3>
+                            <span><b>基于多尺度长白山植被物候对气候的响应研究</b></span>
+                            <time>2020.1-2021.5</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>项目级别：国家级大学生创新创业训练计划</li>
+							<li>主要贡献：项目负责人，负责项目中大部分代码运行与技术操作，工作内容包括长白山植被物候时空演变研究、植被物候影响因素探究、物候反演的尺度效应研究、不同数据源的物候反演差异研究等</li>
+							<li>项目成果：优秀结项，完成一篇一作论文，一份结项报告</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span><b>基于百度迁徙大数据的东北地区人口流动网络格局</b></span>
+                            <time>2021.3-2021.5</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>项目级别：2021 SuperMap杯高校GIS大赛</li>
+							<li>主要贡献：项目负责人，独立完成从数据爬取、数据清洗与整理、分析，到论文撰写与制图等全部内容，研究方法包括社会网络分析、分形理论分析、城市标度律分析、SOM 神经网络聚类分析等</li>
+							<li>项目成果：在研，完成一篇一作论文</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span><b>基于快递网点数据的东北地区城市物流联系空间格局</b></span>
+                            <time>2021.2-2021.5</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>项目级别：2021易智瑞杯中国大学生GIS软件开发竞赛</li>
+							<li>主要贡献：项目负责人，负责快递网点数据爬取、城市网络分析、影响因子分析、制图等内容</li>
+							<li>项目成果：已结题，完成一份研究汇报</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span><b>基于光谱与纹理特征的吉林省梨树县保护性耕作区域识别</b></span>
+                            <time>2021.4-2021.7</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>项目级别：2021易智瑞杯中国大学生GIS软件开发竞赛</li>
+							<li>主要贡献：项目负责人，负责实地采样、Sentinel-2数据预处理、指数计算、随机森林监督分类等内容</li>
+							<li>项目成果：在研，预期完成论文一篇</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span><b>基于POI数据的东北地区老龄人口与养老服务设施空间均衡研究</b></span>
+                            <time>2021.3-2021.7</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>项目级别：2021易智瑞杯中国大学生GIS软件开发竞赛</li>
+							<li>主要贡献：项目负责人，负责POI数据爬取、空间位置分析、空间均衡性测度等内容</li>
+							<li>项目成果：在研，预期开发一款自动获取指定位置POI并进行均衡性评价的WebGIS网页或软件</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+			
+			<!-- 论文撰写 -->
+
+            <section class="project info-unit">
+                <h2 style="margin-top: 25px">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>论文撰写</h2>
+                <hr />
+				<ul>
+					<li>
+						<b>《长白山植被春季物候影响因子探测与归因》 </b>&#40;一作&#41;<br />
+						<b>摘要：</b>许多研究已经表明植被春季物候对气候、地形等因子有显著的响应机制，但因子在空间上的解释程度还难以量化和对比，对因子间的交互作用也研究甚少。本文定量研究了长白山地区植被春季物候的空间分布特征，使用地理探测器方法对植被春季物候进行探测，结果表明：①长白山地区植被生长季开始日期（SOS）整体自西南向东北推迟，高海拔和耕作活动显著推迟小区域内植被SOS；②年蒸散量是解释植被SOS空间分布的最主要因子；③35%的因子组合交互作用非线性增强了对植被SOS分布的解释力，其他组合均为双因子增强关系；④地表温度、年降水量等多数因子解释力在1985—2015年呈增加趋势，而年均温的因子解释力明显减弱；⑤栽培植被较自然植被对多数因子的变化更为敏感。
+					</li>
+					<li>
+						<b>《人口迁徙视角下东北地区城市体系的“层级-网络”结构》 </b>&#40;一作&#41;<br />
+						<b>摘要：</b>使用2021年3月9日至4月28日的百度迁徙大数据，应用首位度、分形理论、城市标度律、社会网络分析和SOM神经网络方法，以人口迁徙的视角研究了东北地区城市体系的“层级-网络”结构。研究获得以下成果：①揭示了东北地区城市体系首位度、分形维数、城市标度律的层次结构特征；②揭示了东北地区重要城市节点、城市联系强度、人口流向等网络结构特征；③根据迁徙兴趣和迁徙热度将东北地区划分为四个凝聚子群和核心/边缘区域，研究了“城市-城市群-东北地区”三个尺度的集聚程度；④综合层次与网络位置，将东北地区城市分为高迁入型核心城市、高迁出型半边缘城市等六大类型。
+					</li>
+				</ul>
+				
+            </section>	
+			<!-- 个人技能 -->
+
+            <section class="project info-unit">
+                <h2 style="margin-top: 25px">
+                    <i class="fa fa-wrench" aria-hidden="true"></i>专业技能</h2>
+                <hr />
+				<ul>
+					<li><b>ArcGIS：</b>能熟练进行矢量化、空间分析、栅格分析、三维建模、网络分析等操作；具备论文地图制作能力。</li>
+					<li><b>Python：</b>熟悉Python的基本操作和常规库函数；能使用ArcPy对地理大数据进行批量处理、按需开发扩展工具；有爬取百度迁徙、腾讯位置、快递网点、大众点评等数据的经验；能进行初级人工智能应用。</li>
+					<li><strong>ENVI：</strong>能熟练进行图像预处理、大气校正、指数计算、多光谱-全色波段融合、主成分变换、纹理特征提取、直方图调整、目视解译、监督/无监督分类、分类精度评价等操作。</li>
+					<li><strong>R：</strong>能进行如地理探测器、随机森林、Sen's斜率、复杂回归分析等方法的数据分析；能进行论文中雷达图、弦图、玫瑰图等若干种图形绘制。</li>
+					<li><strong>IDL：</strong>能进行影像的批处理、图形可视化、分析制图等；掌握软件编写和ENVI二次开发技术。</li>
+					<li><strong>SNAP：</strong>能熟练进行影像预处理、超分辨率合成、大气校正、监督/无监督分类、掩膜/合成去云、指数计算、纹理特征提取等操作；掌握部分拓展插件操作。</li>
+					<li><strong>Ucient/NetDraw：</strong>能进行点中心性分析、凝聚子群分析、核心-边缘结构分析、网络可视化等操作。</li>
+					<li><strong>HTML/CSS/JS/Server：</strong>具备网页编写能力，能制作轻型网页和使用模板搭建较复杂的站点；具有高德、腾讯、百度等api开发经验，有成型作品；有网站搭建、发布、备案和维护经验。</li>
+					<li><strong>SQL：</strong>掌握SQL软件操作和增删改查语句块；能与C#语言联用编写数据库应用软件，有成型作品。</li>
+					<li><strong>C/C#：</strong>具备软件开发软件能力，已开发IMagery Box、智能AA平账等软件；具备基于ArcGIS Engine的二次开发能力，有具备空间分析、栅格处理、可视化等多功能的成型作品。</li>
+					<li><strong>其他：</strong>掌握Origin、MATLAB、SPSS、RS<sup>3</sup>、ViewSpec Pro、PhotoShop等软件的基本操作，目前正学习Pyhton（深度学习应用）和MATLAB。</li>
+				</ul>
+            </section>
+			
+			 <!-- 工作任职 -->
+
+            <section class="project info-unit">
+                <h2 style="margin-top: 25px">
+                    <i class="fa fa-id-card-o" aria-hidden="true"></i>工作任职</h2>
+                <hr />
+				<p><span style="width:180px;text-align:left;display:inline-block;"><b>职务名称</b></span>
+				<span style="width:75px;text-align:left;display:inline-block;"><b>任职时间</b></span></p>
+				<p><span style="width:180px;text-align:left;display:inline-block;">班长</span>
+				<span style="width:75px;text-align:left;display:inline-block;">2018-2019</span></p>
+				<p><span style="width:180px;text-align:left;display:inline-block;">副团支书</span>
+				<span style="width:75px;text-align:left;display:inline-block;">2018-2019</span></p>
+				<p><span style="width:180px;text-align:left;display:inline-block;">GIS新希望协会会员</span>
+				<span style="width:77px;text-align:left;display:inline-block;">2018-2020</span></p>
+				<p><span style="width:180px;text-align:left;display:inline-block;">年级长</span>
+				<span style="width:75px;text-align:left;display:inline-block;">2019-至今</span></p>
+				<p><span style="width:180px;text-align:left;display:inline-block;">GIS团支部组织委员</span>
+				<span style="width:75px;text-align:left;display:inline-block;">2020-至今</span></p>
+				<p><span style="width:180px;text-align:left;display:inline-block;">中国地理学会 学生会员</span>
+				<span style="width:75px;text-align:left;display:inline-block;">2021-至今</span></p>
+            </section>
+			
+			<!-- 自我短评 -->
+
+            <section class="project info-unit">
+                <h2 style="margin-top: 25px">
+                    <i class="fa fa-commenting" aria-hidden="true"></i>自我短评</h2>
+                <hr />
+				<ul>
+				<li>性格踏实严谨，肯吃苦不贪闲，平时喜欢钻研技术难题，重视新技术的学习和应用；</li>
+				<li>研究兴趣是时空大数据挖掘与人工智能应用、社会感知、行为地理学、地理空间交互、城市格局/演化/模式/影响因素研究、其他学科与GIS技术/空间理论的交叉研究；</li>
+				<li>有明确的读博意向和就业计划，希望将来留任高校或科研机构，从事科研和教育事业；</li>
+				<li>其他补充：有驾照、不晕车、无色盲色弱、能熬夜完成紧急任务、有多次野外实习经历。</li></ul>
+            </section>		
+			
+			
+			
+			<hr />
+       		    <footer class="footer" style="text-align: center">
+        <p> <b>十分感谢您阅读我的简历！</p>
+		<p><b style="color:rgba(96,96,96,1.00);font-size: 1rem">信息更新时间：2021/5/31 16:00</b></p><br/>
+		<div id="bakc-to-top" style="width: 100px;text-align: center;margin:0 auto">
+			<a id="back-to-topa" href="#" rel="external nofollow" onClick="backtotop()"><i class="fa fa-angle-double-up"></i>回到顶部</a>
+					</div>
+		
+    </footer>
+		</section>
+		
+    </article>
+
+    <!-- 侧栏 -->
+    <aside>
+        <ul>
+            <li>
+                <a href="mailto:wuxr211@nenu.edu.cn"  target="_blank"><i class="fa fa-envelope"></i>E-mail</a>
+            </li>
+			<li>
+                <a id="addvx1" href="#"><i class="fa fa-wechat"></i>WeChat</a>
+            </li>
+        </ul>
+    </aside>
+		<script>
+		screenwidth = document.documentElement.clientWidth;
+		mywidth = 1100;
+		t = (1-mywidth/screenwidth)*50;
+    	document.getElementById("body").style.padding="2rem "+t.toString()+"%";
+		</script>
+	
+		<script>			
+		document.querySelector('#addvx1').onclick = function(){		
+		var val = document.getElementById("vx");
+		window.getSelection().selectAllChildren(val);
+		document.execCommand("Copy");
+		window.getSelection().removeAllRanges();	
+			
+		swal({title:"微信号已复制",
+		imageUrl: 'assets/images/vx.jpg',
+		});
+		return false;		
+		};
+			
+		document.querySelector('#vx').onclick = function(){		
+		var val = document.getElementById("vx");
+		window.getSelection().selectAllChildren(val);
+		document.execCommand("Copy");
+		window.getSelection().removeAllRanges();	
+			
+		swal({title:"微信号已复制",
+		imageUrl: 'assets/images/vx.jpg',
+		});
+		return false;
+		};
+		</script>
+	
+<script src="assets/js/jquery.js"></script>
+ <script type="text/javascript">
+	 document.querySelector('#back-to-topa').onclick = function(){
+		$('body,html').animate({scrollTop:0},"speed");
+    	return false;
+		};
+ </script>
+</body>
+
+</html>
